@@ -41,6 +41,11 @@ echo ""
 echo "Upgrading pip..."
 pip install --upgrade pip
 
+# Install PyTorch with CUDA support
+echo ""
+echo "Installing PyTorch with CUDA support..."
+pip install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu130
+
 # Install dependencies
 echo ""
 echo "Installing dependencies..."
